@@ -28,7 +28,7 @@ export default function Form(){
                     </div>
                     {/* ()=>console.log(calculateword(word)) */}
                 </form>
-                <div className='para container mt-5  w-50 p-4'>
+                <div className='para container   w-50 p-4'>
                 {/* <p className='refer-par' id='para'></p> */}
                 </div>
                 <div className='result container mt-4'>

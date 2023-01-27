@@ -1,11 +1,10 @@
 import React from "react"
 // Creating a custom hook
 function Logic(){
-   // states for no of words ,timer and handling the run timer
-    
+   // states for no of words ,timer and handling the run timer  
    const[word,setword]=React.useState('')
    const[wordcount,setwordcount]=React.useState(0);
-   const[timer,settimer]=React.useState(10);
+   const[timer,settimer]=React.useState(20);
    const[runtimer,setruntimer]=React.useState(false);
    // text box reference
    const textref=React.useRef(null);
@@ -46,14 +45,14 @@ function Logic(){
    function startagain(e){
        e.preventDefault()
        setruntimer(true)
-       settimer(10)
+       settimer(20)
        document.getElementById('textarea').value = '';
        setwordcount(0)
        textref.current.disabled=false;
        textref.current.focus()
    }
    function endgame(){
-       settimer(false)
+       settimer(0)
        // gets total no of words
        const wordcount = calculateword(word)
        setwordcount(wordcount);

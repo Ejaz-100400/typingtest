@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Inter:wght@300&family=Lato:wght@300&family=Poppins:wght@200&family=Press+Start+2P&family=Roboto+Slab:wght@200;300&family=Roboto:wght@100&display=swap');
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:monospace;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 body{
-  background-color: rgb(19, 17, 17);
+  background-color: rgb(28, 24, 24);
 }
 .form-panel {
   position: relative;
@@ -17,17 +20,17 @@ body{
   font-size:25px;
   font-weight:bold;
 }
-.form-panel{
-}
 textarea {
-  font-family: 'Press Start 2P', cursive;
+  font-family:'Segoe UI';
   border: 3px solid black;
   width: 50%;
   outline: none;
   height: 200px;
   padding: 10px;
   border-radius:20px;
-  border:5px solid silver;
+  font-size:23px;
+  font-weight:500;
+  border:5px solid rgb(61, 226, 24);
 }
 .btn-sec,.result{
   gap:50px;
@@ -35,4 +38,13 @@ textarea {
 .btn-sec>input[type="submit"]{
   border:none;
   border-radius: 0px;
+  background-color: rgb(61, 226, 24);
+  width:10%;
+  color:black;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.result>span{
+font-size:26px;
 }
